@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/Hero";
+import Popular from "../components/Popular";
+
 
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
-  )
-}
+    <>
+      <Hero />
+     <Popular/>
+      </>
+  );
+};
 
-export default Home
+export default Home;
