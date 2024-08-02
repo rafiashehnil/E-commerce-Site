@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const Item = ({ id, name, image, new_price, old_price }) => {
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg relative flex flex-col h-full">
+    <div className="rounded-xl overflow-hidden shadow-lg relative h-[400px] flex flex-col">
       <div className="relative flex-1 group overflow-hidden transition-transform duration-300">
         <Link
           to={`product/${id}`}
@@ -15,17 +15,17 @@ const Item = ({ id, name, image, new_price, old_price }) => {
         <img
           src={image}
           alt="productImage"
-          className="w-full h-3/4 object-cover group-hover:scale-110 transition-transform duration-1000"
-          style={{ objectPosition: 'center top' }}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+          style={{ objectPosition: 'center top' }} // Crops from the top
         />
       </div>
-      <div className="p-4 flex flex-col justify-between flex-1">
-        <h4 className="my-[6px] text-gray-700 text-sm md:text-base font-medium line-clamp-2">{name}</h4>
-        <div className="flex gap-5 items-center mt-auto">
-          <div className="font-bold text-sm md:text-lg">
+      <div className="p-4 flex flex-col justify-between">
+        <h4 className="my-[6px] text-gray-700 text-lg font-medium line-clamp-2">{name}</h4>
+        <div className="flex gap-5 items-center">
+          <div className="font-bold text-lg">
             Tk {new_price.toFixed(2)}
           </div>
-          <div className="text-orange-500 line-through text-sm md:text-lg">
+          <div className="text-orange-500 line-through text-lg">
             Tk {old_price.toFixed(2)}
           </div>
         </div>
@@ -35,6 +35,8 @@ const Item = ({ id, name, image, new_price, old_price }) => {
 };
 
 export default Item;
+
+
 
 
 
