@@ -28,9 +28,9 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/men" element={<Category category="Men" banner={menBanner} />} />
-            <Route path="/women" element={<Category category="Women" banner={womenBanner} />} />
-            <Route path="/kids" element={<Category category="Kids" banner={kidsBanner} />} />
+            <Route path="/men" element={<Category category="men" banner={menBanner} />} />
+            <Route path="/women" element={<Category category="women" banner={womenBanner} />} />
+            <Route path="/kids" element={<Category category="kid" banner={kidsBanner} />} />
             <Route path="/product/:productId" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />

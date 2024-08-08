@@ -16,7 +16,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
           src={image}
           alt="productImage"
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
-          style={{ objectPosition: 'center top' }} // Crops from the top
+          style={{ objectPosition: 'center top' }}
         />
       </div>
       <div className="p-4 flex flex-col justify-between">
