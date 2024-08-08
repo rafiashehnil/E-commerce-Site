@@ -23,10 +23,10 @@ const Category = ({ category, banner }) => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between my-8 mx-2 px-4 md:px-8">
-        <h5 className="text-lg font-semibold mb-4 md:mb-0">
+        <h5 className="text-lg mb-4 md:mb-0">
           <span className="font-bold">Showing 1-12</span> out of 36 products
         </h5>
-        <div className="flex items-center gap-2 px-4 py-2 rounded-full ring-1 ring-slate-900/15 bg-white">
+        <div className="flex items-center gap-2 px-4 py-2 rounded-full ring-1 ring-slate-900/15 bg-white w-max">
           Sort by <MdOutlineKeyboardArrowDown />
         </div>
       </div> 
@@ -47,6 +47,11 @@ const Category = ({ category, banner }) => {
           return null;
         })}
       </div>
+      <div className="mt-16 text-center w-full"> {/* Centering the button */}
+          <button className="rounded-full bg-black text-white px-6 py-2">
+            Load more
+          </button>
+        </div>
     </section>
   );
 }
