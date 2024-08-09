@@ -54,7 +54,7 @@ let all_products = [
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Ivory Cotton Silk Salwar Kurta Salwar Suit Set",
     category: "women",
     image: p3_img,
     new_price: 60.0,
@@ -62,7 +62,7 @@ let all_products = [
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Sea Green Solid Zam Cotton Palazzo Salwar Kameez ",
     category: "women",
     image: p4_img,
     new_price: 100.0,
@@ -70,7 +70,7 @@ let all_products = [
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women's Muslin Red Straight Cord Set",
     category: "women",
     image: p5_img,
     new_price: 85.0,
@@ -102,7 +102,7 @@ let all_products = [
   },
   {
     id: 9,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women's Blck Fancy Women Black Kurta Set",
     category: "women",
     image: p9_img,
     new_price: 85.0,
@@ -118,7 +118,7 @@ let all_products = [
   },
   {
     id: 11,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Printed Straight Kurti with Bracelet Sleeves",
     category: "women",
     image: p11_img,
     new_price: 85.0,
@@ -230,7 +230,7 @@ let all_products = [
   },
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Girl's light yellow classic Peacock T-shirt",
     category: "kid",
     image: p25_img,
     new_price: 85.0,
@@ -238,7 +238,7 @@ let all_products = [
   },
   {
     id: 26,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Girl's  Classic Elegant Minnie Mouse T-shirt",
     category: "kid",
     image: p26_img,
     new_price: 85.0,
