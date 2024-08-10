@@ -310,7 +310,7 @@ let all_products = [
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Light Cyan Embroidered Mixed Cotton Party Frock",
     category: "kid",
     image: p35_img,
     new_price: 85.0,
