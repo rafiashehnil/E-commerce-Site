@@ -7,7 +7,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
     <div className="rounded-xl overflow-hidden shadow-lg relative h-[400px] flex flex-col">
       <div className="relative flex-1 group overflow-hidden transition-transform duration-300">
         <Link
-          to={`product/${id}`}
+          to={`/product/${id}`}
           className="absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 h-12 w-12 bg-white rounded-full flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-300 z-20"
         >
           <FaSearch className="text-gray-600 text-base" />
