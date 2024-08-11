@@ -27,7 +27,7 @@ const {product}=props;
                 </div>
             </div>
             <div className="flex flex-col">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+                <h3 className="text-2xl sm:text-3xl lg:text-2xl xl:text-4xl font-semibold">
                     {product.name}
                 </h3>
                 <div className="flex items-center gap-x-2 sm:gap-x-4 text-orange-500 text-lg sm:text-xl lg:text-2xl font-medium">
