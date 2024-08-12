@@ -3,7 +3,7 @@ import { ShopContext } from '../Context/ShopContext';
 import { TbTrash } from 'react-icons/tb';
 
 const CartItems = () => {
-    const { all_products, cartItems, addToCart, removeFromCart } = useContext(ShopContext);
+    const {getTotalCartAmount ,all_products, cartItems,removeFromCart } = useContext(ShopContext);
 
     return (
         <section className="pt-28 bg-gray-100 px-4 sm:px-8 lg:px-16">
@@ -52,7 +52,7 @@ const CartItems = () => {
                 
                 <div className="flex justify-between py-3">
                     <h4 className="medium-16">Subtotal:</h4>
-                    <h4 className="text-gray-700 font-semibold">Tk{0}</h4>
+                    <h4 className="text-gray-700 font-semibold">Tk{getTotalCartAmount()}</h4>
                 </div>
                 <hr />
                 <div className="flex justify-between py-3">
@@ -62,14 +62,14 @@ const CartItems = () => {
                 <hr />
                 <div className="flex justify-between py-3">
                     <h4 className="bold-18 font-bold">Total:</h4>
-                    <h4 className="bold-18 font-bold">Tk{0}</h4>
+                    <h4 className="bold-18 font-bold">Tk{getTotalCartAmount()}</h4>
                 </div>
 
                 <button className="bg-black text-white rounded-full px-6 py-2 mt-4 block">Checkout</button>
 
                 <div className="mt-8">
                     <h4 className="bold-20 font-bold mb-4">Your coupon code enter here:</h4>
-                    <div className="flex items-center bg-white rounded-full ring-1 ring-slate-900/10">
+                    <div className="flex items-center bg-gray-200 rounded-full ring-1 ring-slate-900/10">
                         <input
                             type="text"
                             placeholder="Coupon code"
@@ -84,5 +84,3 @@ const CartItems = () => {
 }
 
 export default CartItems;
-
-

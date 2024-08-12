@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useContext, useState } from 'react'; 
 import { Link, NavLink } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md'; 
 import { FaOpencart } from 'react-icons/fa'; 
@@ -6,9 +6,11 @@ import Navbar from './Navbar';
 import logo from '../assets/images/logo.png';
 import logout from '../assets/images/logout.svg';
 import user from '../assets/images/user.svg';
+import { ShopContext } from '../Context/ShopContext';
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false); 
+  const {getTotalCartItems} =useContext(ShopContext);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white ring-1 ring-slate-900/5 z-10 h-16 flex items-center">
@@ -43,7 +45,7 @@ const Header = () => {
           <NavLink to="/cart" className="relative flex items-center sm:gap-x-6">
             <FaOpencart className="p-1 h-8 w-8 ring-slate-900/30 ring-1 rounded-full" aria-label="Cart" />
             <span className="absolute top-[-10px] right-[-10px] flex items-center justify-center w-5 h-5 text-xs font-medium text-white bg-orange-500 rounded-full">
-              0
+            {getTotalCartItems()}
             </span>
           </NavLink>
           
@@ -51,7 +53,7 @@ const Header = () => {
           <NavLink to="/login" className="bg-orange-500 text-white rounded flex justify-center items-center py-2 px-4 mr-4">
             <img src={user} alt="User Icon" className="h-5 w-5 mr-2" />  
             Login
-          </NavLink>
+           </NavLink>
         </div>
       </div>
     </header>
