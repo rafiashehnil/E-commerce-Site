@@ -7,7 +7,7 @@ import Cart from './pages/Cart';
 import Login from './pages/Login';
 import Product from './pages/Product';
 import Footer from './components/Footer';
-
+import Order from './components/Order';
 
 import womenImage1 from './assets/images/women1.png';
 import womenImage2 from './assets/images/women2.png';
@@ -33,6 +33,7 @@ export default function App() {
             <Route path="/kids" element={<Category category="kid" banner={kidsBanner} />} />
             <Route path="/product/:productId" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/order" element={<Order />} />
             <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
