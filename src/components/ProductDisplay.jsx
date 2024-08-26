@@ -1,9 +1,5 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../Context/ShopContext";
-import product_rt_1 from "../assets/product_rt_1.jpg";
-import product_rt_2 from "../assets/product_rt_2.jpg";
-import product_rt_3 from "../assets/product_rt_3.jpg";
-import product_rt_4 from "../assets/product_rt_4.jpg";
 import { MdStar } from "react-icons/md";
 
 const ProductDisplay = (props) => {
@@ -15,10 +11,13 @@ const ProductDisplay = (props) => {
       <div className="flex flex-col gap-14 xl:flex-row px-4 lg:px-8">
         <div className="flex gap-x-4 lg:gap-x-6">
           <div className="flex flex-col gap-2 lg:gap-4 flex-wrap">
-            <img src={product_rt_1} alt="prdctImg" className="max-h-[99px]" />
-            <img src={product_rt_2} alt="prdctImg" className="max-h-[99px]" />
-            <img src={product_rt_3} alt="prdctImg" className="max-h-[99px]" />
-            <img src={product_rt_4} alt="prdctImg" className="max-h-[99px]" />
+            <img src={product.image} alt="prdctImg" className="max-h-[84px] " />
+            <img src={product.image} alt="prdctImg" className="max-h-[84px] " />
+            <img src={product.image} alt="prdctImg" className="max-h-[84px] " />
+            <img src={product.image} alt="prdctImg" className="max-h-[84px] " />
+        
+
+           
           </div>
           <div>
             <img src={product.image} alt="" />

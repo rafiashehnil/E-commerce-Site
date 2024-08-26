@@ -8,7 +8,14 @@ const Footer = () => {
     <footer className="bg-gray-200 flex-center pb-24 pt-20">
       <div className="max_padd_container flex w-full flex-col gap-14 px-4 md:px-8">
         <div className="flex flex-wrap items-start justify-between gap-8 md:flex-row">
-          <Link to="/" className="font-bold mb-10 md:mb-0">TrendWave</Link>
+          {/* TrendWave and Paragraph Container */}
+          <div className="flex flex-col gap-4 md:gap-8 mb-10 md:mb-0">
+            <Link to="/" className="font-bold text-lg md:text-xl lg:text-2xl">TrendWave</Link>
+            <p className="text-sm md:text-base lg:text-lg text-gray-500 max-w-xs md:max-w-sm lg:max-w-md">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quidem dignissimos cupiditate sit quas ratione rerum, obcaecati explicabo at delectus animi voluptatem eius molestias, ipsa magnam impedit amet illo? Eum.
+            </p>
+          </div>
+          
           {FOOTER_LINKS.map((col) => (
             <FooterColumn title={col.title} key={col.title}>
               <ul className="flex flex-col gap-4 text-sm font-normal text-gray-500">
@@ -20,6 +27,7 @@ const Footer = () => {
               </ul>
             </FooterColumn>
           ))}
+          
           <FooterColumn title={FOOTER_CONTACT_INFO.title}>
             <ul className="flex flex-col gap-4 text-sm font-normal text-gray-500">
               {FOOTER_CONTACT_INFO.links.map((link) => (
@@ -31,6 +39,7 @@ const Footer = () => {
               ))}
             </ul>
           </FooterColumn>
+          
           <div className="flex flex-col gap-5">
             <ul className="flex gap-4">
               {SOCIALS.links.map((link) => (
